@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="_/base.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Infortuni sul lavoro in Toscana</h1>
+        </div>
+
+        <div id="content">
+            <h3 id="clustertitle"> Cluster Force Layout
+            </br> Infortuni in Toscana primo semestre 2015 
+            </br> per Provincia e Genere </h3>
+            <div id="nav">
+                <ul>
+                    <li><h4><a href="timeline.html" class="selected">TimeLine Chart</a></h4></li>
+                    <li><h4><a href="credits.html" class="selected">Credits</a><h4></li>
+                </ul>
+
+            </div>
+
+            <p id="homepage">
+                Il seguente layout mostra la quantit&agrave; di infortuni avvenuti in Toscana nel primo
+                semestre 2015 mediante l'utilizzo di un cluster force layout, disponibile nella libreria 
+                dei <i>mbostock's blocks </i> al seguente indirizzo.
+                <a href="http://bl.ocks.org/mbostock/7882658">Cluster Force Layout by Mike Bostock</a>
+            </br>
+                Il grafico mostra due <i>cluster</i> (in inglese, grappoli), che rappresentano, ognuno, la quantità di infortuni avvenuti in ogni provincia toscana (rappresentata da un cerchio) e raggruppati per genere (maschile e femminile).
+                Per facilitare la compresione del grafico non sono state utilizzate legende, ma si &egrave; 
+                curata l'interattività dell'interfaccia mediante l'aggiunta di tooltip (etichette
+                che indicassero la provincia, il numero degli infortuni e il genere)
+                e mediante l'utilizzo di colori ben distinti (blu per rappresentare la componente maschile dei dati, rosso per quella femminile).
+
+
+            </p>
+
+            <div id="cluster">
+                <script src="script/d3.min.js"></script>
+                <script src="script/cluster.js"></script>
+            </div>
+        </div>
+
+
+
+        <div id="footer">
+            <a id="homecredit" href="credits.html"><h3>CopyRight &copy; 2015 Michele Tarabella</h3></a>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

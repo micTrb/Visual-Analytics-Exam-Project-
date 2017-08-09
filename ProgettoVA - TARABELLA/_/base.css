@@ -1,0 +1,297 @@
+
+
+/*FONTS*/
+
+@font-face
+{
+	font-family: arch;
+	src: url(fonts/Architects_Daughter/ArchitectsDaughter.ttf);
+}
+
+@font-face
+{
+	font-family: ralewayB;
+	src: url(fonts/Raleway/Raleway-bold.ttf);
+}
+
+@font-face
+{
+	font-family: ralewayL;
+	src: url(fonts/Raleway/Raleway-light.ttf);
+}
+
+@font-face
+{
+	font-family: ralewayM;
+	src: url(fonts/Raleway/Raleway-medium.ttf);
+}
+
+
+/*STYLE*/
+
+
+/********************************** GENERAL TAG STYLE *****************************/
+
+body
+{
+	background-color: #FFF5DE;
+}
+
+p
+{
+	color: #023442;
+}
+
+
+h1, h2, h4, a
+{
+	text-decoration: none;
+	color: #FFF5DE;
+	font-family: arch;
+}
+
+#nav .selected
+{
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #8E6100;
+}
+
+h1, h2
+{
+	font-size: 40px;
+	font-family: arch;
+	text-align: center;
+}
+
+h3
+{
+	font-size: 25px;
+	font-family: arch;
+	text-align: center;
+}
+
+/********************************** MAIN STRUCTURE STYLE *****************************/
+
+/*** CONTAINER ***/
+div#container
+{
+	margin: 20px;
+}
+
+
+/*** HEADER ***/
+
+div#header
+{
+
+	width: auto;
+	height:60px;
+	background-color: #023442;
+	padding: 0;
+
+}
+
+/*** CONTENT DIV ***/
+
+div#content
+{
+	height: 1000px;
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #27CE9F;
+}
+
+#contentCr
+{
+	height: 200px;
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #27CE9F;
+}
+
+/*** HOMEPAGE MAIN CONTENT ***/
+
+p#homepage
+{
+	transform: translate(0%, 8%);
+	margin-right: 50px;
+	margin-left: 200px;
+	font-family: ralewayM;
+}
+
+p#homepageCR
+{
+	transform: translate(250%, -10%);
+	margin-right: 800px;
+	margin-left: 200px;
+	font-family: ralewayM;
+	font-size: 30px;
+}
+
+
+/*** NAVIGATION BAR ***/
+
+div#nav
+{	
+	font-size: 15px;
+	margin-top: 16px;
+	margin-left: 20px;
+	width: 150px;
+	height: auto;
+	float: left;
+	background-color: #006549;
+}
+
+#nav ul
+{
+	list-style-type: none;
+	padding-left: 15px;
+	text-decoration: none;
+}
+
+
+
+/*** FOOTER ***/
+
+div#footer
+{
+	padding: 0px;
+	position: bottom;
+	background-color: #023442;
+	clear: both;
+}
+
+
+/***************************************** HOMEPAGE STYLE ************************************/
+
+a#homecredit
+{
+	text-decoration: none;
+}
+
+p#main
+{
+	font-family: ralewayM;
+	padding: 20px;
+}
+
+#homecontent
+{
+	height: 600px;
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #27CE9F;
+}
+
+
+ul#chartlink
+{        
+	transform: translate(1%, 0%);
+	width: 1000px;
+	height: 400px;
+	list-style-type: none;
+	text-decoration: none;
+
+}
+
+#chartlink li
+{
+	background-color: #006549;
+	margin: 5%;
+	height: auto;
+	width: auto;
+	float: left;
+}
+
+@keyframes myanime
+{
+	from 
+	{ 
+		background-color: #006549;
+
+	}
+	to 
+	{ 
+		background-color: #8E0000; 
+		transition: rotate(10deg);
+	}
+}
+
+#chartlink li:hover
+{
+	animation-name: myanime;
+	animation-duration: 1s;
+}
+
+#chartlink li:nth-child(2)
+{
+	transform: translate(10%, 0);
+}
+	
+.titlechart
+{
+	padding: 20px;
+	text-align: center;	
+}
+
+
+#chartlink div
+{
+	height: 100px;
+	width: 400px;
+}
+
+/***************************************** TIMELINE CHART ************************************/
+
+#timechart
+{
+	width: auto;
+	height: auto;
+	transform: translate(0%, 5%);
+
+	background-color: #FFFEEE;
+}
+
+.axis
+{
+  font-family: geneva;
+}
+
+.axis path,
+.axis line 
+{
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+
+}
+
+/************************************** CLUSTER CHART ********************************************/
+
+#clustertitle
+{
+	color: #00272A;
+}
+
+
+#cluster
+{
+	transform: translate(5%, 5%);
+	margin-top: 20px;
+	margin-bottom: 40px;
+	background-color: #FFFEEE;
+	width: 1000px;
+	height: 600px;
+}
+
+
+
+
+
